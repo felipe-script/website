@@ -1,0 +1,3 @@
+<template>
+    post page
+</template>
