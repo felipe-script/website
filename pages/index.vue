@@ -7,27 +7,27 @@
       <nav>
         <ul class="flex justify-around md:justify-center gap-10">
           <li>
-            <ULink to="#" class="item"> Home </ULink>
+            <a href="#" class="item"> Home </a>
           </li>
           <li>
-            <ULink to="#" class="item">Sobre</ULink>
+            <a href="#" class="item">Sobre</a>
           </li>
           <li>
-            <ULink to="#" class="item"> Contato</ULink>
+            <a href="#" class="item"> Contato</a>
           </li>
         </ul>
       </nav>
     </header>
   </div>
+
   <div class="relative">
     <main class="m-4">
       <section class="main__section">
-        <h1 class="text-center  md:text-3xl  text-greenl2" id="typewriter">
+        <h1 class="text-center md:text-3xl text-greenl2 mt-32" id="typewriter">
           Olá, eu sou o Felipe.L, Desenvolvedor de Software
         </h1>
 
         <article class="text-justify">
-          <!-- <component :is="icons.beaker" class="h-5 w-5"></component> -->
           <h2 hidden>Stacks utilizadas</h2>
           <p id="stacks"></p>
         </article>
@@ -47,6 +47,7 @@ export default {
     matrixRain: matrixRainDirective,
   },
   setup() {
+    //<component :is="icons.beaker" class="h-5 w-5"></component>
     const icons = reactive({
       beaker: BeakerIcon,
     });
@@ -55,25 +56,22 @@ export default {
       const app = "#typewriter";
       const presentation = new Typewriter(app, {
         loop: true,
-        delay: 75,
+        // delay: 75,
       });
       presentation
         .pauseFor(2500)
         .typeString("Olá eu sou o Felipe.L")
-        .pauseFor(300)
+        .pauseFor(100)
         .deleteChars(10)
         .typeString(
           `<strong class='text-greenl1'>
-          Desenvolvedor Front-end </strong> 
-           foco em aplicações <span class='text-greenl2'>web e mobile</span> `
+          Desenvolvedor Front-end </strong>com foco em aplicações <span class='text-greenl2'>web e mobile</span>`
         )
-        .pauseFor(1000)
         .start();
     });
-    return { icons }
+    return { icons };
   },
 };
-
 </script>
 
 <style lang="scss">
