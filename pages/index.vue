@@ -1,6 +1,6 @@
 <template>
-  <canvas v-matrix-rain class="absolute z-0 w-full"></canvas>
-  <div class="bg-black bg-opacity-90 absolute w-full h-full"></div>
+  <canvas v-matrix-rain class="z-0" id="matrix"></canvas>
+  <div class="bg-black bg-opacity-90 fixed w-full h-full"></div>
   <div class="relative">
     <header class="header">
       <h1 class="header__name">Felipe.L dev</h1>
@@ -19,17 +19,17 @@
       </nav>
     </header>
   </div>
-
-  <div class="relative">
+  <div class="relative h-[1500px] bg-slate-300 bg-opacity-50">
     <main class="m-4">
       <section class="main__section">
         <h1 class="text-center md:text-3xl text-greenl2 mt-32" id="typewriter">
           Olá, eu sou o Felipe.L, Desenvolvedor de Software
         </h1>
-
-        <article class="text-justify">
+      </section>
+      <section class="stacks">
+        <article class="text-justify bg-slate-300">
           <h2 hidden>Stacks utilizadas</h2>
-          <p id="stacks"></p>
+          <p id="stacks" class="text-white">tests</p>
         </article>
       </section>
     </main>
@@ -75,6 +75,13 @@ export default {
 </script>
 
 <style lang="scss">
+#matrix{
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+}
 .header {
   @apply px-2 py-10 bg-black bg-opacity-50 flex items-center;
   &__name {
