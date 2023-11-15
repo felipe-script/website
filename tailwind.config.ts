@@ -12,6 +12,21 @@ export default <Partial<Config>>{
   ],
   theme: {
     extend: {
+      'animation': {
+        'text': 'text 5s ease infinite',
+      },
+      'keyframes': {
+        'text': {
+          '0%, 100%': {
+            'background-size': '200% 200%',
+            'background-position': 'left center'
+          },
+          '50%': {
+            'background-size': '200% 200%',
+            'background-position': 'right center'
+          }
+        },
+      },
       colors: {
         greend1: '#01260A',
         greend2: '#12732A',
