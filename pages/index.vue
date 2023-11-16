@@ -22,8 +22,7 @@
   <div class="relative bg-opacity-50">
     <main class="relative">
       <section class="main__section h-screen items-center flex justify-center">
-        <h1 class="md:text-2xl text-greenl2" id="typewriter">
-        </h1>
+        <h1 class="md:text-2xl text-greenl2" id="typewriter"></h1>
       </section>
       <section
         class="stacks text-white bg-greend1 bg-opacity-60 p-4 rounded mb-10 h-screen"
@@ -35,7 +34,7 @@
           >
             Sobre a FLS
           </h1>
-          <div class="w-1/2 mx-auto">
+          <div class="md:w-2/3 mx-auto">
             <p class="text-justify text-greenl2 mt-4">
               Na FLS, acreditamos que fazer software é como criar a receita
               perfeita: uma mistura única de códigos, estratégias e doses
@@ -45,8 +44,8 @@
             </p>
 
             <p class="text-justify text-greenl2 mt-4">
-              Não somos apenas nerds de código (apesar de amarmos um bom
-              código e café), somos verdadeiros artesãos digitais. Imagine-nos como
+              Não somos apenas nerds de código (apesar de amarmos um bom código
+              e café), somos verdadeiros artesãos digitais. Imagine-nos como
               chefs de software, criando soluções personalizadas que se encaixam
               perfeitamente no cardápio exclusivo do seu negócio.
             </p>
@@ -76,17 +75,86 @@
           </div>
         </div>
       </section>
-      <section class="stacks bg-blue-300 h-screen p-4">
-        <h1 class="text-center">Stacks</h1>
-        <div class="flex gap-4">
-          <article class="text-justify bg-blue-500">
-            <h2>Stacks utilizadas</h2>
-            <p id="stacks" class="text-white">Desenvolvimento mobile</p>
-          </article>
-          <article class="text-justify bg-blue-500">
-            <h2>Stacks utilizadas</h2>
-            <p id="stacks" class="text-white"></p>
-          </article>
+      <section class="stacks h-screen p-4">
+        <h1 class="text-center text-white text-2xl mb-10">Nossos Serviços</h1>
+        <!-- bg-slate-400 -->
+        <div
+          class="flex gap-5 flex-col items-center md:flex-row md:justify-center md:items-start"
+        >
+          <div class="flex gap-5 flex-col">
+            <div
+              class="max-w-sm p-6 bg-greend2 border border-greenl1 rounded-lg shadow"
+            >
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Lorem ipsum 1
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias qui incidunt cum sunt. Nihil aspernatur blanditiis
+                natus, ullam itaque necessitatibus ex rem facere, enim, possimus
+                ducimus dolor adipisci. Ullam, doloremque!
+              </p>
+            </div>
+
+            <div
+              class="max-w-sm p-6 bg-greend2 border border-greenl1 rounded-lg shadow"
+            >
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Lorem ipsum 2
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias qui incidunt cum sunt. Nihil aspernatur blanditiis
+                natus, ullam itaque necessitatibus ex rem facere, enim, possimus
+                ducimus dolor adipisci. Ullam, doloremque!
+              </p>
+            </div>
+          </div>
+          <div class="flex gap-5 flex-col">
+            <div
+              class="max-w-sm p-6 bg-greend2 border border-greenl1 rounded-lg shadow"
+            >
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Lorem ipsum 3
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias qui incidunt cum sunt. Nihil aspernatur blanditiis
+                natus, ullam itaque necessitatibus ex rem facere, enim, possimus
+                ducimus dolor adipisci. Ullam, doloremque!
+              </p>
+            </div>
+
+            <div
+              class="max-w-sm p-6 bg-greend2 border border-greenl1 rounded-lg shadow"
+            >
+              <a href="#">
+                <h5
+                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                >
+                  Lorem ipsum 4
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Molestias qui incidunt cum sunt. Nihil aspernatur blanditiis
+                natus, ullam itaque necessitatibus ex rem facere, enim, possimus
+                ducimus dolor adipisci. Ullam, doloremque!
+              </p>
+            </div>
+          </div>
         </div>
       </section>
     </main>
@@ -118,9 +186,9 @@ export default {
       });
       presentation
         .pauseFor(2500)
-         .typeString("Hello World!")
-         .pauseFor(2000)
-         .deleteChars(17)
+        .typeString("Hello World!")
+        .pauseFor(2000)
+        .deleteChars(17)
         .typeString("Olá, somos a FLS,")
         .pauseFor(100)
         // .deleteChars(10)
