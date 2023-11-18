@@ -81,77 +81,78 @@
         <div
           class="flex gap-5 flex-col items-center md:flex-row md:justify-center md:items-start"
         >
-          <div class="flex gap-5 flex-col">
+          <div class="flex gap-5 flex-col items-center">
+            <img
+              :src="bluePillIcon"
+              alt="my-logo"
+              class="w-28 animate-pulse duration-200"
+            />
             <div
-              class="max-w-sm p-6 bg-greend2 border border-greenl1 rounded-lg shadow"
+              class="max-w-sm p-6 bg-blue-700 border border-transparent hover:border-blue-500 transition-colors duration-500 rounded-lg shadow"
             >
               <a href="#">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="mb-2 text-2xl font-bold tracking-tight text-white"
                 >
-                  Lorem ipsum 1
+                  Aplicativos Mobile
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias qui incidunt cum sunt. Nihil aspernatur blanditiis
-                natus, ullam itaque necessitatibus ex rem facere, enim, possimus
-                ducimus dolor adipisci. Ullam, doloremque!
+              <p class="mb-3 font-normal text-gray-300">
+                Desenvolvemos Aplicativos mobile multiplataforma ou seja tanto
+                para ANDROID quanto IOS para que seu produto alcance todos os
+                usuários.
               </p>
             </div>
 
             <div
-              class="max-w-sm p-6 bg-greend2 border border-greenl1 rounded-lg shadow"
+              class="max-w-sm  p-6 bg-blue-700 border border-transparent hover:border-blue-500 transition-colors duration-500 rounded-lg shadow"
             >
               <a href="#">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="mb-2 text-2xl font-bold tracking-tight text-white"
                 >
-                  Lorem ipsum 2
+                  Sites e Sistemas web
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias qui incidunt cum sunt. Nihil aspernatur blanditiis
-                natus, ullam itaque necessitatibus ex rem facere, enim, possimus
-                ducimus dolor adipisci. Ullam, doloremque!
+              <p class="mb-3 font-normal  text-gray-300">
+                Temos expertise em soluções web com mais mais variados produtos
+                no setor financeiro como carteira digitais, sistemas de estoque,
+                ERP e muito mais.
               </p>
             </div>
           </div>
-          <div class="flex gap-5 flex-col">
+
+          <div class="flex gap-5 flex-col items-center">
+            <img :src="redPillIcon" alt="my-logo" class="w-28 animate-pulse" />
             <div
-              class="max-w-sm p-6 bg-greend2 border border-greenl1 rounded-lg shadow"
+              class="max-w-sm p-6 bg-red-700 border border-transparent hover:border-red-500 transition-colors duration-500 rounded-lg shadow"
             >
               <a href="#">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="mb-2 text-2xl font-bold tracking-tight text-white"
                 >
-                  Lorem ipsum 3
+                  Cloud computing
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias qui incidunt cum sunt. Nihil aspernatur blanditiis
-                natus, ullam itaque necessitatibus ex rem facere, enim, possimus
-                ducimus dolor adipisci. Ullam, doloremque!
+              <p class="mb-3 font-normal  text-gray-300">
+                Todas as nossas aplicacoes utilizam computacao em nuvem
               </p>
             </div>
 
             <div
-              class="max-w-sm p-6 bg-greend2 border border-greenl1 rounded-lg shadow"
+              class="max-w-sm p-6 bg-red-700 border border-transparent hover:border-red-500 transition-colors duration-500 rounded-lg shadow"
             >
               <a href="#">
                 <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                  class="mb-2 text-2xl font-bold tracking-tight  text-white"
                 >
                   Lorem ipsum 4
                 </h5>
               </a>
-              <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Molestias qui incidunt cum sunt. Nihil aspernatur blanditiis
-                natus, ullam itaque necessitatibus ex rem facere, enim, possimus
-                ducimus dolor adipisci. Ullam, doloremque!
+              <p class="mb-3 font-normal  text-gray-300">
+                Temos expertise em soluções web com mais mais variados produtos
+                no setor financeiro como carteira digitais, sistemas de estoque,
+                ERP e muito mais.
               </p>
             </div>
           </div>
@@ -167,6 +168,8 @@ import { BeakerIcon } from "@heroicons/vue/24/solid";
 import matrixRainDirective from "@/directives/matrix.js";
 import Typewriter from "typewriter-effect/dist/core";
 import { onMounted } from "vue";
+import bluePillIcon from "@/assets/images/blue-pill.svg";
+import redPillIcon from "@/assets/images/red-pill.svg";
 export default {
   directives: {
     matrixRain: matrixRainDirective,
@@ -198,7 +201,7 @@ export default {
         )
         .start();
     });
-    return { icons };
+    return { icons, redPillIcon, bluePillIcon };
   },
 };
 </script>
