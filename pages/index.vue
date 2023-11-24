@@ -8,7 +8,7 @@
         <span class="md:text-2xl text-greenl2" id="typewriter"></span>
       </section>
       <About/>
-      <section class="stacks h-screen p-4">
+      <section class="p-4">
                 <!--    <h1
           class="text-lg mb-10 take-pill text-greenl2 w-1/2 mx-auto"
         >
@@ -19,7 +19,7 @@
        <Products/>
       </section>
     </main>
-    <!-- <footer>footer</footer> -->
+    <footer class="h-1  mt-10">footer</footer>
   </div>
 </template>
 

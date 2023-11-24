@@ -11,6 +11,9 @@
             <a href="#about" class="item">Sobre</a>
           </li>
           <li>
+            <a href="#products" class="item"> Serviços</a>
+          </li>
+          <li>
             <a href="#" class="item"> Contato</a>
           </li>
         </ul>
@@ -26,7 +29,7 @@
     font-family: "Matrix", Arial, Helvetica, sans-serif;
   }
   .item {
-  @apply text-greenl2 hover:text-greenl1 transition-colors duration-500;
-}
+    @apply text-greenl2 hover:text-greenl1 transition-colors duration-500;
+  }
 }
 </style>
