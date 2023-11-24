@@ -1,4 +1,10 @@
 <template>
+  <h1
+    class="text-center text-3xl mb-10  bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-red-700 to-blue-700 animate-text"
+  >
+    TAKE YOUR PILL
+  </h1>
+
   <div
     class="flex gap-5 flex-col items-center md:flex-row md:justify-center md:items-start"
   >
@@ -74,11 +80,10 @@
 <script setup>
 import bluePillIcon from "@/assets/images/blue-pill.svg";
 import redPillIcon from "@/assets/images/red-pill.svg";
-
 </script>
 
 <style lang="scss">
-.take-pill {
+.matrix-text {
   font-family: "Matrix", Arial, Helvetica, sans-serif;
 }
 </style>

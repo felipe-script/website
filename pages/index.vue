@@ -16,8 +16,6 @@
           believe whatever you want to believe. You take the red pill... you
           stay in Wonderland, and I show you how deep the rabbit hole goes.
         </h1> -->
-        <h1 class="text-center  text-3xl mb-10 take-pill bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-red-700 to-blue-700 animate-text">TAKE YOUR PILL</h1>
-        <!-- bg-slate-400 -->
        <Products/>
       </section>
     </main>
@@ -45,16 +43,14 @@ export default {
   },
   setup() {
     //<component :is="icons.beaker" class="h-5 w-5"></component>
-    const icons = reactive({
-      beaker: BeakerIcon,
-    });
+    // const icons = reactive({
+    //   beaker: BeakerIcon,
+    // });
 
     onMounted(() => {
       const app = "#typewriter";
       const presentation = new Typewriter(app, {
         loop: true,
-        // delay: 75,
-        //Olá, somos a FLS, Desenvolvemos Software com extrema qualidade.
       });
       presentation
         .pauseFor(2500)
@@ -63,7 +59,6 @@ export default {
         .deleteChars(17)
         .typeString("Olá, somos a FLS,")
         .pauseFor(100)
-        // .deleteChars(10)
         .typeString(
           `<strong class='text-greenl1'>
           Desenvolvemos Softwares </strong>com extrema qualidade  e <span class='text-greenl2'>excelência</span>`
@@ -76,7 +71,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .take-pill{
+  /* .text-matrix{
     font-family: "Matrix", Arial, Helvetica, sans-serif;
-  }
+  } */
 </style>
