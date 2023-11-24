@@ -1,162 +1,24 @@
 <template>
-  <canvas v-matrix-rain class="z-0" id="matrix"></canvas>
+  <canvas v-matrix-rain class="z-0 fixed" id="matrix"></canvas>
   <div class="bg-black bg-opacity-90 fixed w-full h-full"></div>
-  <div class="relative">
-    <header class="header">
-      <h1 class="header__name">FLS</h1>
-      <nav>
-        <ul class="flex justify-around md:justify-center gap-10">
-          <li>
-            <a href="#" class="item"> Home </a>
-          </li>
-          <li>
-            <a href="#about" class="item">Sobre</a>
-          </li>
-          <li>
-            <a href="#" class="item"> Contato</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-  </div>
+  <Header/>
   <div class="relative bg-opacity-50">
     <main class="relative">
-      <section class="main__section h-screen items-center flex justify-center">
-        <h1 class="md:text-2xl text-greenl2" id="typewriter"></h1>
+      <section class="h-screen items-center flex justify-center">
+        <span class="md:text-2xl text-greenl2" id="typewriter"></span>
       </section>
-      <section
-        class="stacks text-white bg-greend1 bg-opacity-60 p-4 rounded mb-10 h-screen"
-        id="about"
-      >
-        <div id="about__content" class="flex flex-col h-full justify-center">
-          <h1
-            class="text-center mb-4 md:text-2xl bg-gradient-to-r bg-clip-text text-transparent from-greenl1 via-greend2 to-greend1 animate-text title-about"
-          >
-            Sobre a FLS
-          </h1>
-          <div class="md:w-2/3 mx-auto">
-            <p class="text-justify text-greenl2 mt-4">
-              Na FLS, acreditamos que fazer software é como criar a receita
-              perfeita: uma mistura única de códigos, estratégias e doses
-              generosas de paixão. Nossa equipe, composta por desenvolvedores
-              que realmente amam o que fazem, está pronta para transformar suas
-              ideias em algo extraordinário.
-            </p>
-
-            <p class="text-justify text-greenl2 mt-4">
-              Não somos apenas nerds de código (apesar de amarmos um bom código
-              e café), somos verdadeiros artesãos digitais. Imagine-nos como
-              chefs de software, criando soluções personalizadas que se encaixam
-              perfeitamente no cardápio exclusivo do seu negócio.
-            </p>
-
-            <p class="text-justify text-greenl2 mt-4">
-              Nossas habilidades não se limitam apenas ao básico - somos a
-              referência no mercado quando se trata de desenvolvimento de sites,
-              sistemas web e aplicativos móveis. Mantemos nossos métodos
-              atualizados, usando as últimas tendências para servir a você algo
-              surpreendente e inovador.
-            </p>
-
-            <p class="text-justify text-greenl2 mt-4">
-              E quando se trata de transparência, somos como um livro aberto (ou
-              melhor, um código aberto). Mantemos você no loop em todas as
-              etapas do desenvolvimento para que você não só esteja informado,
-              mas também satisfeito com o que está sendo criado.
-            </p>
-
-            <p class="text-justify text-greenl2 mt-4">
-              Na FLS, não estamos apenas construindo software; estamos
-              construindo amizades duradouras e parcerias que resistirão ao
-              teste do tempo. Junte-se a nós nessa jornada emocionante de
-              transformar zeros e uns em algo que realmente faz a diferença.
-              Estamos prontos para criar algo incrível juntos!
-            </p>
-          </div>
-        </div>
-      </section>
+      <About/>
       <section class="stacks h-screen p-4">
-        <h1 class="text-center text-white text-2xl mb-10">Nossos Serviços</h1>
-        <!-- bg-slate-400 -->
-        <div
-          class="flex gap-5 flex-col items-center md:flex-row md:justify-center md:items-start"
+                <!--    <h1
+          class="text-lg mb-10 take-pill text-greenl2 w-1/2 mx-auto"
         >
-          <div class="flex gap-5 flex-col items-center">
-            <img
-              :src="bluePillIcon"
-              alt="my-logo"
-              class="w-28 animate-pulse duration-200"
-            />
-            <div
-              class="max-w-sm p-6 bg-blue-700 border border-transparent hover:border-blue-500 transition-colors duration-500 rounded-lg shadow"
-            >
-              <a href="#">
-                <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-white"
-                >
-                  Aplicativos Mobile
-                </h5>
-              </a>
-              <p class="mb-3 font-normal text-gray-300">
-                Desenvolvemos Aplicativos mobile multiplataforma ou seja tanto
-                para ANDROID quanto IOS para que seu produto alcance todos os
-                usuários.
-              </p>
-            </div>
-
-            <div
-              class="max-w-sm  p-6 bg-blue-700 border border-transparent hover:border-blue-500 transition-colors duration-500 rounded-lg shadow"
-            >
-              <a href="#">
-                <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-white"
-                >
-                  Sites e Sistemas web
-                </h5>
-              </a>
-              <p class="mb-3 font-normal  text-gray-300">
-                Temos expertise em soluções web com mais mais variados produtos
-                no setor financeiro como carteira digitais, sistemas de estoque,
-                ERP e muito mais.
-              </p>
-            </div>
-          </div>
-
-          <div class="flex gap-5 flex-col items-center">
-            <img :src="redPillIcon" alt="my-logo" class="w-28 animate-pulse" />
-            <div
-              class="max-w-sm p-6 bg-red-700 border border-transparent hover:border-red-500 transition-colors duration-500 rounded-lg shadow"
-            >
-              <a href="#">
-                <h5
-                  class="mb-2 text-2xl font-bold tracking-tight text-white"
-                >
-                  Cloud computing
-                </h5>
-              </a>
-              <p class="mb-3 font-normal  text-gray-300">
-                Todas as nossas aplicacoes utilizam computacao em nuvem
-              </p>
-            </div>
-
-            <div
-              class="max-w-sm p-6 bg-red-700 border border-transparent hover:border-red-500 transition-colors duration-500 rounded-lg shadow"
-            >
-              <a href="#">
-                <h5
-                  class="mb-2 text-2xl font-bold tracking-tight  text-white"
-                >
-                  Lorem ipsum 4
-                </h5>
-              </a>
-              <p class="mb-3 font-normal  text-gray-300">
-                Temos expertise em soluções web com mais mais variados produtos
-                no setor financeiro como carteira digitais, sistemas de estoque,
-                ERP e muito mais.
-              </p>
-            </div>
-          </div>
-        </div>
+          You take the blue pill... the story ends, you wake up in your bed and
+          believe whatever you want to believe. You take the red pill... you
+          stay in Wonderland, and I show you how deep the rabbit hole goes.
+        </h1> -->
+        <h1 class="text-center  text-3xl mb-10 take-pill bg-gradient-to-r bg-clip-text text-transparent from-blue-500 via-red-700 to-blue-700 animate-text">TAKE YOUR PILL</h1>
+        <!-- bg-slate-400 -->
+       <Products/>
       </section>
     </main>
     <!-- <footer>footer</footer> -->
@@ -168,11 +30,18 @@ import { BeakerIcon } from "@heroicons/vue/24/solid";
 import matrixRainDirective from "@/directives/matrix.js";
 import Typewriter from "typewriter-effect/dist/core";
 import { onMounted } from "vue";
-import bluePillIcon from "@/assets/images/blue-pill.svg";
-import redPillIcon from "@/assets/images/red-pill.svg";
+import Header from "@/components/Header.vue"
+import About from "@/components/About.vue"
+import Products from "@/components/Products.vue"
+
 export default {
   directives: {
     matrixRain: matrixRainDirective,
+  },
+  components:{
+    Header,
+    About,
+    Products
   },
   setup() {
     //<component :is="icons.beaker" class="h-5 w-5"></component>
@@ -201,30 +70,13 @@ export default {
         )
         .start();
     });
-    return { icons, redPillIcon, bluePillIcon };
+   
   },
 };
 </script>
 
 <style lang="scss">
-#matrix {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-}
-.header {
-  @apply px-2 py-10 bg-black bg-opacity-50 flex items-center;
-  &__name {
-    @apply w-1/3 ml-2 text-greenl1 text-2xl;
+  .take-pill{
     font-family: "Matrix", Arial, Helvetica, sans-serif;
   }
-}
-.title-about {
-  font-family: "Matrix", Arial, Helvetica, sans-serif;
-}
-.item {
-  @apply text-greenl2 hover:text-greenl1 transition-colors duration-500;
-}
 </style>
