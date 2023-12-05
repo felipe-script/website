@@ -1,5 +1,5 @@
 <template>
-  <div class="relative">
+  <div class="fixed w-full z-20">
     <header class="header">
       <h1 class="header__name">FLS</h1>
       <nav>
@@ -23,7 +23,7 @@
 </template>
 <style lang="scss" scoped>
 .header {
-  @apply px-2 py-10 bg-black bg-opacity-50 flex items-center;
+  @apply px-2 py-10 bg-black bg-opacity-90 flex items-center;
   &__name {
     @apply w-1/3 ml-2 text-greenl1 text-2xl;
     font-family: "Matrix", Arial, Helvetica, sans-serif;

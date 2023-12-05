@@ -8,16 +8,7 @@
         <span class="md:text-2xl text-greenl2" id="typewriter"></span>
       </section>
       <About/>
-      <section class="p-4">
-                <!--    <h1
-          class="text-lg mb-10 take-pill text-greenl2 w-1/2 mx-auto"
-        >
-          You take the blue pill... the story ends, you wake up in your bed and
-          believe whatever you want to believe. You take the red pill... you
-          stay in Wonderland, and I show you how deep the rabbit hole goes.
-        </h1> -->
        <Products/>
-      </section>
     </main>
     <footer class="h-1  mt-10">footer</footer>
   </div>
