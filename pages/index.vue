@@ -8,7 +8,7 @@
         <span class="md:text-2xl text-greenl2" id="typewriter"></span>
       </section>
       <About/>
-       <Products/>
+       <Services/>
     </main>
     <footer class="h-1  mt-10">footer</footer>
   </div>
@@ -19,18 +19,11 @@ import { BeakerIcon } from "@heroicons/vue/24/solid";
 import matrixRainDirective from "@/directives/matrix.js";
 import Typewriter from "typewriter-effect/dist/core";
 import { onMounted } from "vue";
-import Header from "@/components/Header.vue"
-import About from "@/components/About.vue"
-import Products from "@/components/Products.vue"
+
 
 export default {
   directives: {
     matrixRain: matrixRainDirective,
-  },
-  components:{
-    Header,
-    About,
-    Products
   },
   setup() {
     //<component :is="icons.beaker" class="h-5 w-5"></component>

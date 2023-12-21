@@ -33,46 +33,57 @@
         <div
           class="max-w-sm p-6 bg-blue-700 border border-transparent hover:border-blue-500 transition-colors duration-500 rounded-lg shadow"
         >
-          <a href="#">
+          <a href="javascript:void(0)" class="cursor-default">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
               Aplicativos Mobile
             </h5>
           </a>
           <p class="mb-3 font-normal text-gray-300">
-            Desenvolvemos aplicativos mobile multiplataforma, oferecendo uma
-            experiência versátil e inovadora tanto no Android quanto no iOS.
-            Alcance eficientemente todos os usuários.
+            Desenvolvedor especializado em
+            <span class="underline decoration-red-500">React Native</span>. para
+            aplicativos móveis multiplataforma (Android/iOS) com vasta
+            experiência em áreas como finanças, logística e cuidados com
+            pessoas. Aplico práticas rigorosas de teste, incluindo testes
+            unitários e end-to-end, para assegurar qualidade e confiabilidade
+            nas aplicações.
           </p>
         </div>
 
         <div
           class="max-w-sm p-6 bg-blue-700 border border-transparent hover:border-blue-500 transition-colors duration-500 rounded-lg shadow"
         >
-          <a href="#">
+          <a href="javascript:void(0)" class="cursor-default">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
               Desenvolvimento web
             </h5>
           </a>
           <p class="mb-3 font-normal text-gray-300">
-            Temos expertise em soluções web com mais variados produtos como
-            Sites e Sistemas web, carteira digitais, sistemas de estoque,
-            E-commerce e muito mais.
+            Com ampla experiência em desenvolvimento web e foco em modernizar
+            sistemas legados, atuei em diversos projetos, incluindo sites,
+            carteiras digitais e sistemas de e-commerce experiência em
+            tecnologias como:
+            <span class="underline decoration-red-500"
+              >HTML, CSS, JavaScript, React, Vue.js, Next.js, Nuxt</span
+            >, entre outras.
           </p>
         </div>
 
         <div
           class="max-w-sm p-6 bg-blue-700 border border-transparent hover:border-blue-500 transition-colors duration-500 rounded-lg shadow"
         >
-          <a href="#">
+          <a href="javascript:void(0)" class="cursor-default">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
               UX/UI
             </h5>
           </a>
           <p class="mb-3 font-normal text-gray-300">
-            Na criação de experiência UX/UI, buscamos a harmonia entre design
+            Criação de experiência UX/UI, buscamos a harmonia entre design
             intuitivo e funcionalidades envolventes. Nossa abordagem centrada no
             usuário transforma conceitos em interfaces atraentes, garantindo uma
-            experiência fluida e memorável.
+            experiência fluida e memorável usando ferramentas como
+            <span class="underline decoration-red-500">figma</span>,
+            <span class="underline decoration-red-500">photoshop</span> e
+            outros..
           </p>
         </div>
       </div>
@@ -82,50 +93,48 @@
         <div
           class="max-w-sm p-6 bg-red-700 border border-transparent hover:border-red-500 transition-colors duration-500 rounded-lg shadow"
         >
-          <a href="#">
+          <a href="javascript:void(0)" class="cursor-default">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
-              Cloud computing
+              Desenvolvimento Back-end
             </h5>
           </a>
           <p class="mb-3 font-normal text-gray-300">
-            Utilizamos tecnologia de Cloud Computing em todos os nossos
-            produtos, garantindo escalabilidade, segurança e desempenho
-            otimizado. Proporcionamos soluções inovadoras na nuvem para
-            impulsionar o sucesso do seu negócio.
+            Conhecimento com back-end criações de API REST , faço uso de
+            tecnologias como
+            <span class="underline decoration-blue-500"
+              >Node.js, Express, MySQL e MongoDB...</span
+            >
           </p>
         </div>
 
         <div
           class="max-w-sm p-6 bg-red-700 border border-transparent hover:border-red-500 transition-colors duration-500 rounded-lg shadow"
         >
-          <a href="#">
+          <a href="javascript:void(0)" class="cursor-default">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
-              Desenvolvimento back-end
+              Infraestrutura
             </h5>
           </a>
           <p class="mb-3 font-normal text-gray-300">
-            Desenvolvimento back-end é a espinha dorsal de sistemas, lidando com
-            lógica, banco de dados e integração. Utilizamos algumas tecnologias
-            como Node.js entre outras para criar servidores robustos, garantindo
-            o funcionamento eficiente das aplicações.
+            Experiência em implementação de aplicações utilizando serviços como
+            <span class="underline decoration-blue-500"
+              >AWS, Vercel e Netlify.</span> Além disso, possuo expertise na otimização de
+            desempenho e escalabilidade, proporcionando soluções eficientes para
+            ambientes de nuvem.
           </p>
         </div>
-        <div
+        <!-- <div
           class="max-w-sm p-6 bg-red-700 border border-transparent hover:border-red-500 transition-colors duration-500 rounded-lg shadow"
         >
-          <a href="#">
+          <a href="javascript:void(0)" class="cursor-default">
             <h5 class="mb-2 text-2xl font-bold tracking-tight text-white">
-              Clusters
+              Dev Ops
             </h5>
           </a>
           <p class="mb-3 font-normal text-gray-300">
-            Cluster de Banco de Dados para aprimorar a confiabilidade e
-            escalabilidade de nossos sistemas. Ao adotar essa abordagem
-            avançada, garantimos maior disponibilidade, distribuição equilibrada
-            de carga e resiliência, proporcionando uma base sólida para a gestão
-            eficiente e segura de dados em nossas operações.
+            possuo conhecimento com github actions, docker
           </p>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
