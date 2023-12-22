@@ -1,27 +1,36 @@
 <template>
   <canvas v-matrix-rain class="z-0 fixed" id="matrix"></canvas>
   <div class="bg-black bg-opacity-90 fixed w-full h-full"></div>
-  <Header/>
+  <Header />
   <div class="relative bg-opacity-50">
     <main class="relative">
       <section class="h-screen items-center flex justify-center">
         <span class="md:text-2xl text-greenl2" id="typewriter"></span>
       </section>
-      <About/>
-       <Services/>
+      <About />
+      <Services />
     </main>
-    <footer class="h-1  mt-10">footer</footer>
+      <Footer/>
   </div>
 </template>
 
 <script>
 import { BeakerIcon } from "@heroicons/vue/24/solid";
+import Services from "@/components/Services.vue";
+import Header from "@/components/Header.vue";
+import About from "@/components/About.vue";
+import Footer from "@/components/Footer.vue";
 import matrixRainDirective from "@/directives/matrix.js";
 import Typewriter from "typewriter-effect/dist/core";
 import { onMounted } from "vue";
 
-
 export default {
+  components: {
+    Services,
+    Header,
+    About,
+    Footer
+  },
   directives: {
     matrixRain: matrixRainDirective,
   },
@@ -49,13 +58,12 @@ export default {
         )
         .start();
     });
-   
   },
 };
 </script>
 
 <style lang="scss">
-  /* .text-matrix{
+/* .text-matrix{
     font-family: "Matrix", Arial, Helvetica, sans-serif;
   } */
 </style>
