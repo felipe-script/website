@@ -9,8 +9,9 @@
       </section>
       <About />
       <Services />
+      <Contact />
     </main>
-      <Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -20,6 +21,7 @@ import Services from "@/components/Services.vue";
 import Header from "@/components/Header.vue";
 import About from "@/components/About.vue";
 import Footer from "@/components/Footer.vue";
+import Contact from "@/components/Contact.vue";
 import matrixRainDirective from "@/directives/matrix.js";
 import Typewriter from "typewriter-effect/dist/core";
 import { onMounted } from "vue";
@@ -29,7 +31,8 @@ export default {
     Services,
     Header,
     About,
-    Footer
+    Footer,
+    Contact
   },
   directives: {
     matrixRain: matrixRainDirective,
